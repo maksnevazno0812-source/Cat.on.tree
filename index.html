@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cat.on.tree — столярная мастерская</title>
+<meta name="description" content="Столярная мастерская cat.on.tree: изделия из дерева на заказ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Neucha&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter>
+</svg>
+
+<header class="top wrap">
+  <a class="brand" href="#top">cat.on.tree</a>
+  <nav aria-label="Разделы">
+    <a href="#works">Изделия</a>
+    <a href="#process">Как работаем</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-text">
+      <h1>Столярная <br>мастерская</h1>
+      <p class="lead">Делаем вещи из дерева вручную: мебель, посуду и мелочи для дома. Расскажите, что нужно, и мы нарисуем эскиз.</p>
+      <a class="btn" href="#order">Оставить заявку</a>
+    </div>
+    <img class="hero-cat" src="assets/logo.png" alt="Нарисованный полосатый кот лежит на ветке дерева" width="1200" height="613">
+  </section>
+
+  <section class="wrap" id="works">
+    <h2>Что мы делаем</h2>
+    <ul class="items">
+      <li><b>Разделочные доски</b><span>Дуб, ясень, орех. С ручкой или без.</span></li>
+      <li><b>Полки и стеллажи</b><span>Под размер вашей стены, крепёж скрытый.</span></li>
+      <li><b>Столы и стулья</b><span>Обеденные, письменные и журнальные.</span></li>
+      <li><b>Лежанки и домики для кошек</b><span>Из берёзы, без запаха и лака.</span></li>
+      <li><b>Шкатулки и подарки</b><span>С гравировкой имени или даты.</span></li>
+    </ul>
+  </section>
+
+  <section class="wrap" id="process">
+    <h2>Как мы работаем</h2>
+    <ol class="steps">
+      <li><b>Вы пишете</b><p>Что нужно, размеры, фото места.</p></li>
+      <li><b>Эскиз и цена</b><p>Присылаем рисунок и стоимость.</p></li>
+      <li><b>Изготовление</b><p>Делаем вручную, показываем фото.</p></li>
+      <li><b>Доставка</b><p>Упаковываем и привозим.</p></li>
+    </ol>
+  </section>
+
+  <section class="wrap order" id="order">
+    <h2>Заявка</h2>
+    <form id="orderForm" novalidate>
+      <label>Ваше имя
+        <input name="name" autocomplete="name" required>
+      </label>
+      <label>Что хотите заказать
+        <textarea name="what" rows="4" placeholder="Например: обеденный стол из дуба, 160×80 см" required></textarea>
+      </label>
+      <button class="btn" type="submit">Скопировать и открыть Telegram</button>
+      <p class="status" id="status" role="status"></p>
+    </form>
+  </section>
+
+  <section class="wrap contact" id="contact">
+    <h2>Контакты</h2>
+    <ul class="links">
+      <li><span class="ico">ВК</span><a href="https://vk.com/cat.ontree" target="_blank" rel="noopener">cat.ontree</a></li>
+      <li><span class="ico">ТГ</span><a href="https://t.me/catontree" target="_blank" rel="noopener">catontree</a></li>
+      <li><span class="ico">тел</span><a href="tel:+79142073593" id="phone">+7 (914) 207-35-93</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="wrap">© <span id="year">2026</span> cat.on.tree</footer>
+<script src="script.js"></script>
+</body>
+</html>
